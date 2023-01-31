@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="./public/vite.svg"
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com"
+        />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="style.css"
+        />
+        <title>DevLinks</title>
+    </head>
+    <body>
+        <div id="app">
+            <div class="profile">
+                <img
+                    src="https://github.com/italomagnov.png"
+                    alt="imagem de perfil"
+                    class="profile__image"
+                />
+                <p class="profile__name">@italomagnov</p>
+            </div>
+
+            <div class="switch">
+                <button
+                    class="switch__button"
+                    onclick="toggleMode()"
+                ></button>
+                <span class="switch__track"></span>
+            </div>
+
+            <div class="links">
+                <ul class="list">
+                    <li class="list__item">
+                        <button
+                            id="downloadAPK"
+                            href="#"
+                            class="list__link__button"
+                            target="_blank"
+                        >
+                            Download do App "Lista de Compras"
+                        </button>
+                    </li>
+                    <li class="list__item">
+                        <a
+                            href="https://todo-list-react-sepia-zeta.vercel.app/"
+                            class="list__link"
+                            target="_blank"
+                            >Todo List</a
+                        >
+                    </li>
+                    <li class="list__item">
+                        <a
+                            href="https://digital-clock-two-weld.vercel.app/"
+                            class="list__link"
+                            target="_blank"
+                            >Relógio Digital</a
+                        >
+                    </li>
+                    <li class="list__item">
+                        <a
+                            href="https://newspaper-app-ruddy.vercel.app/"
+                            class="list__link"
+                            target="_blank"
+                            >Desafio página de nóticias com API</a
+                        >
+                    </li>
+                </ul>
+            </div>
+
+            <div class="social-links">
+                <a
+                    href="https://github.com/italomagnov"
+                    class="link"
+                    target="_blank"
+                >
+                    <ion-icon
+                        class="social-icons"
+                        name="logo-github"
+                    ></ion-icon>
+                </a>
+                <a
+                    href="https://linkedin.com/in/italomagnov"
+                    class="link"
+                    target="_blank"
+                >
+                    <ion-icon
+                        class="social-icons"
+                        name="logo-linkedin"
+                    ></ion-icon>
+                </a>
+                <a
+                    href="https://www.instagram.com/_roryz/"
+                    class="link"
+                    target="_blank"
+                >
+                    <ion-icon
+                        class="social-icons"
+                        name="logo-instagram"
+                    ></ion-icon>
+                </a>
+            </div>
+
+            <footer>
+                <input
+                    type="hidden"
+                    id="hiddenValue"
+                    value="a09891c0-747b-4ddc-89bb-4b51761cef96"
+                />
+                <button
+                    class="btnPix"
+                    onclick="copyHiddenValue()"
+                >
+                    clicando aqui você copia meu pix e pode me pagar um
+                    cafézinho ☕
+                </button>
+                <p>
+                    Feito com 💜 pelo
+                    <a
+                        href="https://linkedin.com/in/italomagnov"
+                        target="_blank"
+                        ><b>Rory</b></a
+                    >
+                </p>
+            </footer>
+        </div>
+
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+        <script src="./main.js"></script>
+    </body>
+</html>
